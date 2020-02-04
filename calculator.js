@@ -47,6 +47,7 @@ function performCalculation() {
         default:
             displayValue = firstValue;        
     }
+    firstValue = displayValue;
     updateScreen(displayValue);
     console.log("foo");
 }
