@@ -1,4 +1,4 @@
-let displayValue = "5138008";
+let displayValue = "";
 let firstValue = 0;
 let secondValue = 0;
 let currentOperation = null;
