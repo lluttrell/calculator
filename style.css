@@ -1,6 +1,6 @@
 button {
-    margin: 5px 5px;
-    width: 30%;
+    margin: 2px 0px;
+    width: 24%;
     border-radius: 8px;
     font-size: 18px;
 }
@@ -9,8 +9,28 @@ h1 {
     text-align: center;
 }
 
-#clear {
+.operator {
+    background-color: lightgray;
+}
+
+.operator:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+#clearall {
     background-color: salmon;
+}
+
+#clearall:hover {
+    background-color: rgb(252, 151, 140);
+}
+
+#equals {
+    background-color: greenyellow;
+}
+
+#equals {
+    background-color: rgb(179, 250, 71);
 }
 
 #calculator-body {
@@ -21,7 +41,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     width: 400px;
-    height:600px;
+    height:500px;
     border: 2px solid lightgray;
     border-radius: 8px;
 }
@@ -39,9 +59,10 @@ h1 {
 }
 
 #calculator-pad {
+    margin: 4px;
     flex: 8;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 

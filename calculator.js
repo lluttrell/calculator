@@ -5,8 +5,10 @@ let currentOperation = null;
 
 updateScreen(displayValue);
 
+
+document.getElementById("clearall").addEventListener('click', clearAll);
+
 // add values to screen as user inputs numbers
-document.getElementById("clear").addEventListener('click', clearAll);
 document.getElementById("one").addEventListener('click', updateScreenValue.bind(null,"1"));
 document.getElementById("two").addEventListener('click', updateScreenValue.bind(null,"2"));
 document.getElementById("three").addEventListener('click', updateScreenValue.bind(null,"3"));
@@ -16,6 +18,7 @@ document.getElementById("six").addEventListener('click', updateScreenValue.bind(
 document.getElementById("seven").addEventListener('click', updateScreenValue.bind(null,"7"));
 document.getElementById("eight").addEventListener('click', updateScreenValue.bind(null,"8"));
 document.getElementById("nine").addEventListener('click', updateScreenValue.bind(null,"9"));
+document.getElementById("zero").addEventListener('click', updateScreenValue.bind(null,"0"));
 
 // record first number and set operation flag
 document.getElementById("plus").addEventListener('click', operationSelect.bind(null,"plus"));
