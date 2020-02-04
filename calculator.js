@@ -39,7 +39,7 @@ function performCalculation() {
             displayValue = firstValue * secondValue;
             break;
         case "divide":
-            displayValue = firstValue / secondValue;
+            displayValue = Math.floor((firstValue / secondValue)*1e8)/1e8;
             break;
         default:
             displayValue = firstValue;        
